@@ -1,24 +1,33 @@
-# README
+## Blockbuster
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este es un proyecto de sistema de alquiler de películas, desarrollado con Ruby on Rails. Permite a los usuarios ver una lista de películas y clientes, además de asignar una película a un cliente.
 
-Things you may want to cover:
+Requisitos
+Ruby versión 3.1.2
+Rails versión 7.0.6
+SQLite3
+Node.js
+Yarn
 
-* Ruby version
+## Instalación
 
-* System dependencies
+Clona el repositorio a tu máquina local usando git clone.
+Navega hasta el directorio del proyecto.
+Ejecuta bundle install para instalar las dependencias de Ruby.
+Ejecuta yarn install para instalar las dependencias de JavaScript.
+Ejecuta rails db:migrate para crear la base de datos.
+Ejecuta rails server para iniciar el servidor de Rails.
+Ahora, deberías poder visitar http://localhost:3000 en tu navegador web para ver la aplicación.
 
-* Configuration
+## Funcionalidad
 
-* Database creation
+MoviesController: controlador que gestiona las películas. Permite operaciones de CRUD en películas y asignar una película a un cliente.
+CustomersController: controlador que gestiona los clientes. Permite operaciones de CRUD en clientes.
+Las relaciones entre las películas y los clientes se manejan a través de las acciones edit y update en MoviesController, donde puedes asignar una película a un cliente.
 
-* Database initialization
+## Contribuciones
 
-* How to run the test suite
+Las contribuciones son bienvenidas. Por favor, abre un issue o realiza un pull request con tus cambios.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Licencia
+Este proyecto está licenciado bajo la licencia MIT.
